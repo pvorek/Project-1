@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+
+:root{
+    --red:#fd0000;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+*::selection{
+    background: var(--red);
+    color:#fff;
+}
+
+html{
+    font-size:70%;
+    overflow-x: hidden;
+}
+
+Section{
+    padding:0 7%;
+    padding-top:12px;
+}
+
+.button{
+    font-size: 10px;
+    padding:12px;
+    background-color:var(--red);
+    color:#fff
+    cursor:pointer;
+    
+}
+
+.button hover{
+    color:#fff
+    
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    width:100%;
+
+}
+
+header .heading{
+    font-size: 30px;
+    color: #667;
+    padding: 1px;
+    text-align: center;
+}
+
+header #menu{
+    font-size: 30px;
+    color:#667;
+    cursor: pointer;
+    margin: 10px;
+    display:none;
+}
+
+header .navbar ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background:var(--red);
+    padding: 10px;
+}
+header .navbar ul li{
+    margin: 0 25px;
+}
+
+header .navbar ul li a{
+    font-size: 25px;
+    color:#fff;
+}
+header .navbar ul li:hover{
+    color:rgb(78, 78, 78);
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background:url(bgg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+
+.home .image{
+    flex: 1 1 40px;
+}
+
+.home .image img{
+    width:60%;
+    position: relative;
+}
+
+.home .content{
+    flex: 1 1 40px;
+}
+
+.home .content h1{
+    font-size:55px;
+    text-shadow: white;
+    color:rgb(255, 255, 255);
+}
+
+.home .content p{
+    font-size:24px;
+    text-shadow: white;
+    color:rgb(252, 250, 250);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button
+{
+	background-color: black;
+	color: white;
+	width: 150px;
+	height: 40px;
+}
+    
